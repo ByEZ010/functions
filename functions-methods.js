@@ -9,13 +9,17 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
+var domainname = [];
 function getEmailDomain (email){
-    const domainname = email.split("@");
-    for (let i=0; domainname.length; i++){}
-    return domainname;
-
+    domainname = email.split("@");
+    for (let i=0; domainname.length; i++){
+            console.log(domainname[1]);
+            break;
+    }
 }
-console.log(getEmailDomain("n.eeken@novi-education.nl"));
+getEmailDomain("n.eeken@novi-education.nl");
+getEmailDomain("t.mellink@novi.nl");
+getEmailDomain("a.wiersma@outlook.com");
 
 
 /* Opdracht  2 */
