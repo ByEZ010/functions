@@ -30,6 +30,19 @@ getEmailDomain("a.wiersma@outlook.com");
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+function typeOfEmail (email) {
+    if (/novi-education.nl\s*$/.test(email)) {
+        console.log("Student");
+    } else if (/novi.nl\s*$/.test(email)) {
+        console.log("Medewerker");
+    } else {
+        console.log("Extern");
+    }
+}
+typeOfEmail("n.eeken@novi-education.nl");
+typeOfEmail("t.mellink@novi.nl");
+typeOfEmail("novi.nlaapjesk@outlook.com");
+typeOfEmail("a.wiersma@outlook.com");
 
 
 /* Opdracht  3 */
